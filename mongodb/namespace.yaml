@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: roboshop       # Change this to your desired namespace name
+  labels:
+    name: roboshop
+    environment: dev # Optional: label for grouping or filtering           
+  
