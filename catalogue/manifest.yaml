@@ -43,7 +43,6 @@ spec:
         envFrom:
         - configMapRef:
           name: catalogue
-
 ---
 apiVersion: v1
 kind: Service
