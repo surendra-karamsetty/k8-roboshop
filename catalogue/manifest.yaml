@@ -40,6 +40,25 @@ spec:
       containers:
       - name: catalogue
         image: surendra3207/catalogue:1.0.0
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128mi"
+          limits:
+            cpu: "100m"
+            memory: "128mi"
+        readinessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 10
+          failureThreshold: 2
+        livenessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 10
+          failureThreshold: 2
         envFrom:
         - configMapRef:
             name: catalogue
