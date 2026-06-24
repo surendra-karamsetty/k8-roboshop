@@ -42,7 +42,7 @@ spec:
         image: surendra3207/catalogue:1.0.0
         envFrom:
         - configMapRef:
-          name: catalogue  
+          name: catalogue
 ---
 apiVersion: v1
 kind: Service
