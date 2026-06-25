@@ -45,5 +45,5 @@ spec:
     component: redis
   ports:
   - protocol: TCP
-    port: 5679
-    targetPort: 5679
+    port: 6379
+    targetPort: 6379
